@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Inversiones Davar S.A de C.V - Landing page en construcción. Invertimos hoy, construimos tu futuro." />
+  <meta name="theme-color" content="#10192A" />
+  <title>Inversiones Davar | En Construcción</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            davarPrimary: '#10192A',
+            davarSecondary: '#C59854',
+            davarComplement: '#F1D28F',
+            davarText: '#2c2c2c',
+            davarGray: '#F4F5F7'
+          },
+          boxShadow: {
+            gold: '0 20px 60px rgba(197, 152, 84, 0.25)',
+            soft: '0 25px 80px rgba(0, 0, 0, 0.25)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .serif { font-family: Georgia, "Times New Roman", serif; }
+    .bg-pattern {
+      background-image:
+        radial-gradient(circle at 20% 20%, rgba(241, 210, 143, 0.18), transparent 28%),
+        radial-gradient(circle at 85% 15%, rgba(197, 152, 84, 0.14), transparent 26%),
+        radial-gradient(circle at 50% 90%, rgba(197, 152, 84, 0.12), transparent 30%),
+        linear-gradient(135deg, #10192A 0%, #07101D 54%, #10192A 100%);
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.075);
+      border: 1px solid rgba(241, 210, 143, 0.20);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+    .shine {
+      position: relative;
+      overflow: hidden;
+    }
+    .shine::before {
+      content: "";
+      position: absolute;
+      inset: -120% auto auto -120%;
+      width: 70%;
+      height: 260%;
+      transform: rotate(35deg);
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.18), transparent);
+      animation: shine 5.5s infinite;
+    }
+    @keyframes shine {
+      0% { left: -120%; }
+      45%, 100% { left: 140%; }
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-davarPrimary text-white antialiased">
+  <main class="relative min-h-screen overflow-hidden bg-pattern">
+    <div class="pointer-events-none absolute inset-0 opacity-[0.08]" aria-hidden="true">
+      <div class="h-full w-full" style="background-image: linear-gradient(rgba(255,255,255,.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.5) 1px, transparent 1px); background-size: 64px 64px;"></div>
+    </div>
+
+    <section class="relative mx-auto flex min-h-screen w-full max-w-7xl flex-col px-5 py-6 sm:px-8 lg:px-10">
+      <header class="flex items-center justify-between gap-4">
+        <a href="#inicio" class="group flex items-center gap-3" aria-label="Inicio Inversiones Davar">
+          <div class="flex h-11 w-11 items-center justify-center rounded-2xl border border-davarComplement/25 bg-white/10 shadow-gold transition group-hover:scale-105">
+            <span class="serif text-xl font-bold tracking-wide text-davarComplement">D</span>
+          </div>
+          <div class="leading-tight">
+            <p class="serif text-lg font-semibold tracking-[0.12em] text-white">DAVAR</p>
+            <p class="text-[10px] font-medium uppercase tracking-[0.28em] text-davarComplement/85">Real Estate</p>
+          </div>
+        </a>
+
+        <a href="https://wa.me/13059304423" target="_blank" rel="noopener noreferrer" class="hidden rounded-full border border-davarComplement/35 px-5 py-2.5 text-sm font-semibold text-davarComplement transition hover:border-davarComplement hover:bg-davarComplement hover:text-davarPrimary sm:inline-flex">
+          WhatsApp
+        </a>
+      </header>
+
+      <div id="inicio" class="grid flex-1 items-center gap-10 py-12 lg:grid-cols-[1.04fr_.96fr] lg:gap-14 lg:py-16">
+        <div class="order-2 text-center lg:order-1 lg:text-left">
+          <div class="mx-auto mb-5 inline-flex items-center gap-2 rounded-full border border-davarComplement/25 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-davarComplement lg:mx-0">
+            <span class="h-2 w-2 rounded-full bg-davarComplement shadow-[0_0_18px_rgba(241,210,143,.9)]"></span>
+            Sitio web en construcción
+          </div>
+
+          <h1 class="serif mx-auto max-w-4xl text-5xl font-semibold leading-[0.95] tracking-[0.04em] text-white sm:text-6xl lg:mx-0 lg:text-7xl xl:text-8xl">
+            Inversiones <span class="block bg-gradient-to-r from-davarComplement via-davarSecondary to-davarComplement bg-clip-text text-transparent">Davar</span>
+          </h1>
+
+          <p class="mx-auto mt-6 max-w-2xl text-lg font-medium leading-8 text-davarComplement sm:text-xl lg:mx-0">
+            Invertimos hoy, construimos tu futuro.
+          </p>
+
+          <p class="mx-auto mt-5 max-w-2xl text-base leading-8 text-white/72 sm:text-lg lg:mx-0">
+            Muy pronto presentaremos nuestra nueva plataforma digital para soluciones inmobiliarias, oportunidades de inversión y asesoría profesional en real estate.
+          </p>
+
+          <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
+            <a href="https://wa.me/13059304423" target="_blank" rel="noopener noreferrer" class="shine inline-flex items-center justify-center rounded-full bg-gradient-to-r from-davarComplement to-davarSecondary px-7 py-4 text-sm font-bold uppercase tracking-[0.16em] text-davarPrimary shadow-gold transition hover:-translate-y-0.5 hover:shadow-[0_24px_70px_rgba(197,152,84,.36)]">
+              Escribir por WhatsApp
+            </a>
+            <a href="mailto:realestate.davar@gmail.com" class="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-7 py-4 text-sm font-bold uppercase tracking-[0.16em] text-white transition hover:-translate-y-0.5 hover:border-davarComplement hover:text-davarComplement">
+              Enviar correo
+            </a>
+          </div>
+
+          <div class="mt-10 grid gap-3 sm:grid-cols-2 lg:max-w-2xl">
+            <a href="mailto:realestate.davar@gmail.com" class="rounded-3xl border border-white/10 bg-white/[0.07] p-5 text-left transition hover:border-davarComplement/45 hover:bg-white/[0.10]">
+              <p class="text-xs font-bold uppercase tracking-[0.22em] text-davarComplement">Correo</p>
+              <p class="mt-2 break-all text-sm font-semibold text-white sm:text-base">realestate.davar@gmail.com</p>
+            </a>
+            <div class="rounded-3xl border border-white/10 bg-white/[0.07] p-5 text-left transition hover:border-davarComplement/45 hover:bg-white/[0.10]">
+              <p class="text-xs font-bold uppercase tracking-[0.22em] text-davarComplement">Llamadas y WhatsApp</p>
+              <div class="mt-2 flex flex-col gap-1 text-sm font-semibold text-white sm:text-base">
+                <a class="hover:text-davarComplement" href="tel:+13059304423">+1 (305) 930-4423</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-1 lg:order-2">
+          <div class="relative mx-auto max-w-[420px] sm:max-w-[480px] lg:max-w-[560px]">
+            <div class="absolute -inset-6 rounded-[2rem] bg-davarComplement/15 blur-3xl"></div>
+            <div class="glass relative rounded-[2rem] p-3 shadow-soft sm:rounded-[2.5rem] sm:p-4">
+              <div class="overflow-hidden rounded-[1.6rem] border border-davarComplement/25 bg-[#07101D] sm:rounded-[2rem]">
+                <img src="assets/logo-inversiones-davar.jpg" alt="Logo Inversiones Davar S.A de C.V" class="h-full w-full object-cover" />
+              </div>
+            </div>
+            <div class="absolute -bottom-5 left-1/2 w-[88%] -translate-x-1/2 rounded-3xl border border-davarComplement/20 bg-[#07101D]/90 px-5 py-4 text-center shadow-gold backdrop-blur-xl">
+              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-davarComplement">Real Estate • Inversiones • Propiedades</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="relative border-t border-white/10 py-5 text-center text-xs leading-6 text-white/65 sm:text-sm">
+        <p>
+          <span class="font-semibold text-white">Inversiones Davar 2026</span> - Derechos Reservados - Desarrollado por
+          <a href="https://edevisraga.com" target="_blank" rel="noopener noreferrer" class="font-semibold text-davarComplement transition hover:text-white">Edevis Raga</a>
+        </p>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
