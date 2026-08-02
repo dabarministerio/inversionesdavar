@@ -1,0 +1,30 @@
+[
+    {
+        "slug": "muy-pronto",
+        "title": "¡Muy Pronto!",
+        "type": "residencial",
+        "typeLabel": "Muy Pronto",
+        "price": "Price",
+        "city": "Homestead, Florida",
+        "bedrooms": "",
+        "bathrooms": "",
+        "area": "",
+        "summary": "Pronto más propiedades",
+        "status": "published",
+        "featured": true,
+        "images": [
+            {
+                "src": "assets/img/properties/casa-homestead-1.svg",
+                "alt": "Fachada de casa familiar en Homestead Florida"
+            },
+            {
+                "src": "assets/img/properties/casa-homestead-2.svg",
+                "alt": "Vista interior referencial de casa familiar en Homestead"
+            },
+            {
+                "src": "assets/img/properties/casa-homestead-3.svg",
+                "alt": "Área residencial en Homestead con visión patrimonial"
+            }
+        ]
+    }
+]
