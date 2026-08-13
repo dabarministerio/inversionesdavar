@@ -1,0 +1,13 @@
+{
+  "name": "inversiones-davar-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "npx http-server . -p 8080 -c-1",
+    "sitemap": "node scripts/generate-sitemap.js"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.10",
+    "http-server": "^14.1.1"
+  }
+}

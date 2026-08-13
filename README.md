@@ -1,16 +1,13 @@
-# Inversiones Davar - Web completa estática
+# Inversiones Davar
 
-Versión de revisión para la web formal de Inversiones Davar S.A. de C.V.
+Versión modular para GitHub Pages.
 
-## Incluye
+Estructura principal:
 
-- Home y estructura de 8 páginas principales en español.
-- Versión en inglés para hreflang.
-- Blog inicial con 3 artículos SEO.
-- Página 404, página 500, política de privacidad y términos.
-- Sitemap XML, robots.txt, canonical, Open Graph, Twitter Cards, JSON-LD y breadcrumbs.
-- Menú responsive mobile-first con hamburger desplegable a la derecha.
-- Micro-interacciones con transiciones entre 200 ms y 360 ms.
-- Imágenes locales optimizadas, `loading="lazy"`, SVGs ligeros y logo en WebP.
-- Formulario conectado a WhatsApp con los datos prellenados.
-- Sección de Staff con Yma Avila, Nélida Gómez y Maria Boscan.
+- `index.html`: landing page única con módulos/secciones principales.
+- `blog/`: listado y artículos individuales con SEO.
+- `propiedades/`: listado y páginas individuales de propiedades con SEO.
+- `admin/`: panel local PHP para XAMPP. No se sube como panel funcional a GitHub Pages.
+- `data/`: configuración, blog, propiedades y páginas.
+
+Para editar artículos o propiedades: abrir `http://localhost/davar/admin/`, guardar y luego subir los archivos generados a GitHub.
