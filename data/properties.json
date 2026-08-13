@@ -1,33 +1,99 @@
 [
     {
-        "slug": "muy-pronto",
-        "title": "¡Muy Pronto!",
-        "type": "residencial",
-        "typeLabel": "Muy Pronto",
-        "price": "Price",
-        "city": "Homestead, Florida",
-        "bedrooms": "",
-        "bathrooms": "",
-        "area": "",
-        "summary": "Pronto más propiedades",
+        "slug": "casa-en-miami-florida",
+        "url": "propiedades/casa-en-miami-florida/",
+        "title": "Casa en Miami, Florida",
+        "type": "venta",
+        "typeLabel": "Casa en Miami, Florida",
+        "price": "$480,000",
+        "country": "Estados Unidos",
+        "city": "Miami, Florida",
+        "operation": "Venta",
+        "bedrooms": "3",
+        "bathrooms": "2",
+        "area": "1,066",
+        "summary": "Fully renovated 3-bed, 2-bath single-family on an oversized corner lot — perfect for large families and outdoor living. Upgrades throughout include modern kitchen and baths, new flooring, updated systems, and hurricane-ready accordion shutters.",
         "status": "published",
         "featured": true,
         "images": [
             {
-                "src": "assets/img/properties/casa-homestead-1.svg",
-                "alt": "Fachada de casa familiar en Homestead Florida"
+                "src": "assets/img/properties/casa-en-miami-florida-1.webp",
+                "alt": "Casa en Miami, Florida imagen 1"
             },
             {
-                "src": "assets/img/properties/casa-homestead-2.svg",
-                "alt": "Vista interior referencial de casa familiar en Homestead"
+                "src": "assets/img/properties/casa-en-miami-florida-2.webp",
+                "alt": "Casa en Miami, Florida imagen 2"
             },
             {
-                "src": "assets/img/properties/casa-homestead-3.svg",
-                "alt": "Área residencial en Homestead con visión patrimonial"
+                "src": "assets/img/properties/casa-en-miami-florida-3.webp",
+                "alt": "Casa en Miami, Florida imagen 3"
             }
-        ],
-        "url": "propiedades/muy-pronto/",
+        ]
+    },
+    {
+        "slug": "apartamento-miami-fl-33130",
+        "url": "propiedades/apartamento-miami-fl-33130/",
+        "title": "Apartamento Miami, FL 33130",
+        "type": "residencial",
+        "typeLabel": "Apartamento",
+        "price": "$81,000",
         "country": "Estados Unidos",
-        "operation": "Venta"
+        "city": "Miami, Florida",
+        "operation": "Venta",
+        "bedrooms": "1",
+        "bathrooms": "1",
+        "area": "571",
+        "summary": "This project operates under a co-ownership model with eight owners per unit, ideal for buyers seeking a fully managed, ready-to-use property in Brickell with predictable returns. Each investor acquires a 1/8 fractional ownership alongside seven other owners, with the purchase price, expenses, and maintenance costs divided proportionally.",
+        "status": "published",
+        "featured": true,
+        "images": [
+            {
+                "src": "assets/img/properties/apartamento-miami-fl-33130-1.webp",
+                "alt": "Apartamento Miami, FL 33130 imagen 1"
+            },
+            {
+                "src": "assets/img/properties/apartamento-miami-fl-33130-2.webp",
+                "alt": "Apartamento Miami, FL 33130 imagen 2"
+            },
+            {
+                "src": "assets/img/properties/apartamento-miami-fl-33130-3.webp",
+                "alt": "Apartamento Miami, FL 33130 imagen 3"
+            },
+            {
+                "src": "assets/img/properties/apartamento-miami-fl-33130-4.webp",
+                "alt": "Apartamento Miami, FL 33130 imagen 4"
+            }
+        ]
+    },
+    {
+        "slug": "casa-en-miami-fl-33142",
+        "url": "propiedades/casa-en-miami-fl-33142/",
+        "title": "Casa en Miami, FL 33142",
+        "type": "venta",
+        "typeLabel": "Casa en Miami, Florida",
+        "price": "$380,000",
+        "country": "Estados Unidos",
+        "city": "Miami, Florida",
+        "operation": "Venta",
+        "bedrooms": "2",
+        "bathrooms": "1",
+        "area": "1192",
+        "summary": "Beautifully located single-family home in one of Miami’s most convenient areas, just minutes from Miami International Airport, Downtown Miami, Brickell, and major highways. Situated on an oversized lot (zoned duplex), this property offers exceptional outdoor space with ample room to build a pool, add an ADU/guest house, or create a custom outdoor oasis.",
+        "status": "published",
+        "featured": true,
+        "images": [
+            {
+                "src": "assets/img/properties/casa-en-miami-fl-33142-1.webp",
+                "alt": "Casa en Miami, FL 33142 imagen 1"
+            },
+            {
+                "src": "assets/img/properties/casa-en-miami-fl-33142-2.webp",
+                "alt": "Casa en Miami, FL 33142 imagen 2"
+            },
+            {
+                "src": "assets/img/properties/casa-en-miami-fl-33142-3.webp",
+                "alt": "Casa en Miami, FL 33142 imagen 3"
+            }
+        ]
     }
 ]
