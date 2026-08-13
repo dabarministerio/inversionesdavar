@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /scripts/
-Disallow: /src/
-Disallow: /admin/
-Sitemap: https://inversionesdavar.com/sitemap.xml
