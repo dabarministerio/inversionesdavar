@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Yma Avila">
-  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#10192A"/><stop offset="1" stop-color="#C59854"/></linearGradient><radialGradient id="r" cx="35%" cy="20%" r="80%"><stop stop-color="#F1D28F" stop-opacity=".42"/><stop offset="1" stop-color="#10192A" stop-opacity="0"/></radialGradient></defs>
-  <rect width="320" height="320" rx="160" fill="url(#g)"/>
-  <rect width="320" height="320" rx="160" fill="url(#r)"/>
-  <circle cx="160" cy="126" r="54" fill="#F1D28F" opacity=".92"/>
-  <path d="M72 286c12-66 52-98 88-98s76 32 88 98" fill="#F1D28F" opacity=".75"/>
-  <text x="160" y="178" text-anchor="middle" font-family="Georgia, serif" font-size="68" font-weight="700" fill="#10192A">YA</text>
-</svg>
