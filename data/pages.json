@@ -1,0 +1,47 @@
+{
+  "siteUrl": "https://inversionesdavar.com",
+  "editableSlugs": [
+    {
+      "title": "Inversiones Davar | Inversión inmobiliaria en Estados Unidos y Honduras",
+      "slug": "/",
+      "lang": "es",
+      "indexable": true
+    },
+    {
+      "title": "Blog | Inversiones Davar",
+      "slug": "/blog/",
+      "lang": "es",
+      "indexable": true
+    },
+    {
+      "title": "Propiedades y proyectos | Inversiones Davar",
+      "slug": "/propiedades/",
+      "lang": "es",
+      "indexable": true
+    },
+    {
+      "title": "Política de privacidad | Inversiones Davar",
+      "slug": "/politica-privacidad.html",
+      "lang": "es",
+      "indexable": false
+    },
+    {
+      "title": "Términos y condiciones | Inversiones Davar",
+      "slug": "/terminos-condiciones.html",
+      "lang": "es",
+      "indexable": false
+    },
+    {
+      "title": "404 | Página no encontrada",
+      "slug": "/404.html",
+      "lang": "es",
+      "indexable": false
+    },
+    {
+      "title": "500 | Error del servidor",
+      "slug": "/500.html",
+      "lang": "es",
+      "indexable": false
+    }
+  ]
+}
