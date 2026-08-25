@@ -1,0 +1,9 @@
+{
+  "name":"Vitalis Tower - Inversiones Davar",
+  "short_name":"Vitalis Tower",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#f5f1e9",
+  "theme_color":"#11110f",
+  "icons":[{"src":"assets/icons/icon-192.png","sizes":"192x192","type":"image/png"}]
+}

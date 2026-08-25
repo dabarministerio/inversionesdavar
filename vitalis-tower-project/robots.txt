@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /storage/
+Sitemap: https://inversionesdavar.com/vitalis-tower-project/sitemap.xml
