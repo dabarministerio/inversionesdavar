@@ -2,6 +2,11 @@
   const $ = (s, root=document) => root.querySelector(s);
   const $$ = (s, root=document) => [...root.querySelectorAll(s)];
   const body = document.body;
+  // Resolve the project root from this script URL so navigation also works when
+  // the site is served from /project-name/ in XAMPP or GitHub Pages.
+  const selfScript = [...document.scripts].find(s => /assets\/js\/davar\.js(?:\?|$)/.test(s.src));
+  const projectBase = selfScript ? new URL('../../', selfScript.src) : new URL('./', location.href);
+  const localUrl = path => new URL(String(path || '').replace(/^\/+/, ''), projectBase).href;
   const header = $('[data-header]');
   const openBtn = $('[data-menu-open]');
   const closeBtn = $('[data-menu-close]');
@@ -38,13 +43,13 @@
       en:{florida:'/florida/', 'palm-beach':'/florida/palm-beach/', loxahatchee:'/florida/loxahatchee/', aventura:'/florida/aventura/', honduras:'/honduras/'},
       es:{florida:'/es/florida/', 'palm-beach':'/es/florida/palm-beach/', loxahatchee:'/es/florida/loxahatchee/', aventura:'/es/florida/aventura/', honduras:'/es/honduras/'}
     };
-    if(destination && !type && !q && direct[lang]?.[destination]){ location.href = direct[lang][destination]; return; }
+    if(destination && !type && !q && direct[lang]?.[destination]){ location.href = localUrl(direct[lang][destination]); return; }
     const base = lang === 'es' ? '/es/propiedades/' : '/properties/';
     const params = new URLSearchParams();
     if(destination) params.set('location', destination);
     if(type) params.set('type', type);
     if(q) params.set('q', q);
-    location.href = `${base}${params.toString() ? '?' + params.toString() : ''}`;
+    location.href = localUrl(`${base}${params.toString() ? '?' + params.toString() : ''}`);
   });
 
   const filterRoot = $('[data-portfolio-filters]');
@@ -114,6 +119,34 @@
     [['name',labels.name],['email',labels.email],['phone',labels.phone],['interest',labels.interest],['message',labels.message]].forEach(([key,label]) => { const v=d.get(key); if(v) lines.push(`${label}: ${v}`); });
     window.open(`https://wa.me/13059304423?text=${encodeURIComponent(lines.join('\n'))}`,'_blank','noopener');
   }));
+
+  // Blog search and category filters.
+  const blogCards = $$('[data-blog-card]');
+  if(blogCards.length){
+    const search = $('[data-blog-search]');
+    const chips = $$('[data-blog-filter]');
+    const empty = $('[data-blog-empty]');
+    let category = 'all';
+    const applyBlog = () => {
+      const q = (search?.value || '').toLowerCase().trim();
+      let visible = 0;
+      blogCards.forEach(card => {
+        if(card.classList.contains('blog-card-featured')) return;
+        const text = card.textContent.toLowerCase();
+        const cat = card.dataset.blogCategory || '';
+        const ok = (!q || text.includes(q)) && (category === 'all' || cat === category);
+        card.hidden = !ok;
+        if(ok) visible++;
+      });
+      if(empty) empty.hidden = visible !== 0;
+    };
+    search?.addEventListener('input', applyBlog);
+    chips.forEach(chip => chip.addEventListener('click', () => {
+      category = chip.dataset.blogFilter || 'all';
+      chips.forEach(c => c.classList.toggle('is-active', c === chip));
+      applyBlog();
+    }));
+  }
 
   $$('[data-whatsapp]').forEach(btn => btn.addEventListener('click', () => window.open('https://wa.me/13059304423','_blank','noopener')));
 })();
