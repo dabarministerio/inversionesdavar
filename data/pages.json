@@ -1,0 +1,53 @@
+{
+  "siteUrl": "https://inversionesdavar.com",
+  "editableSlugs": [
+    {
+      "title": "English Home",
+      "slug": "/",
+      "lang": "en",
+      "indexable": true
+    },
+    {
+      "title": "Inicio Español",
+      "slug": "/es/",
+      "lang": "es",
+      "indexable": true
+    },
+    {
+      "title": "Properties",
+      "slug": "/properties/",
+      "lang": "en",
+      "indexable": true
+    },
+    {
+      "title": "Propiedades",
+      "slug": "/es/propiedades/",
+      "lang": "es",
+      "indexable": true
+    },
+    {
+      "title": "Florida",
+      "slug": "/florida/",
+      "lang": "en",
+      "indexable": true
+    },
+    {
+      "title": "Florida ES",
+      "slug": "/es/florida/",
+      "lang": "es",
+      "indexable": true
+    },
+    {
+      "title": "Honduras",
+      "slug": "/honduras/",
+      "lang": "en",
+      "indexable": true
+    },
+    {
+      "title": "Honduras ES",
+      "slug": "/es/honduras/",
+      "lang": "es",
+      "indexable": true
+    }
+  ]
+}
