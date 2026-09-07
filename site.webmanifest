@@ -2,14 +2,14 @@
   "name": "Inversiones Davar",
   "short_name": "Davar",
   "description": "Real estate opportunities in Florida and Honduras.",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#0f1828",
   "theme_color": "#0f1828",
   "icons": [
     {
-      "src": "/assets/icons/apple-touch-icon.png",
+      "src": "assets/icons/apple-touch-icon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
